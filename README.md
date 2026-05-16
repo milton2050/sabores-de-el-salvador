@@ -19,4 +19,4 @@ Landing page interactiva desarrollada con HTML, CSS y JavaScript.
 Milton Contreras
 
 ## URL del sitio
-https://usuario.github.io/sabores-de-el-salvador/
+https://github.com/milton2050/sabores-de-el-salvador
