@@ -1,0 +1,256 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  line-height:1.6;
+  color:#333;
+}
+
+/* NAVBAR */
+
+.header{
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:1000;
+  transition:0.3s;
+}
+
+.header.scrolled{
+  background:#000;
+  box-shadow:0 2px 10px rgba(0,0,0,0.3);
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+}
+
+.logo{
+  color:white;
+  font-size:1.5rem;
+  font-weight:bold;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#ffd166;
+}
+
+.hamburger{
+  display:none;
+  font-size:2rem;
+  color:white;
+  cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+  height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,0.5),
+  rgba(0,0,0,0.5)),
+  url('../img/hero.jpg');
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.hero-content h1{
+  font-size:3rem;
+  margin-bottom:20px;
+}
+
+.hero-content p{
+  margin-bottom:20px;
+  font-size:1.2rem;
+}
+
+.btn{
+  background:#e63946;
+  color:white;
+  padding:12px 25px;
+  border:none;
+  border-radius:5px;
+  text-decoration:none;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#c1121f;
+}
+
+/* NOSOTROS */
+
+.nosotros{
+  padding:100px 10%;
+  text-align:center;
+}
+
+/* SERVICIOS */
+
+.servicios{
+  padding:100px 10%;
+  background:#f5f5f5;
+}
+
+.servicios h2{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.card{
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+}
+
+.card h3{
+  padding:15px;
+}
+
+.card p{
+  padding:0 15px 20px;
+}
+
+/* FORMULARIO */
+
+.formulario{
+  padding:100px 10%;
+  text-align:center;
+}
+
+form{
+  max-width:500px;
+  margin:auto;
+}
+
+.form-group{
+  margin-bottom:20px;
+  text-align:left;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+
+.error{
+  color:red;
+  font-size:0.9rem;
+}
+
+#mensajeExito{
+  margin-top:20px;
+  color:green;
+  font-weight:bold;
+}
+
+/* FOOTER */
+
+.footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+}
+
+.sociales{
+  margin:15px 0;
+}
+
+.sociales a{
+  color:#ffd166;
+  margin:0 10px;
+  text-decoration:none;
+}
+
+/* RESPONSIVE TABLET */
+
+@media(max-width:900px){
+
+  .cards{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+/* RESPONSIVE MOVIL */
+
+@media(max-width:768px){
+
+  .hamburger{
+    display:block;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:80px;
+    right:0;
+    background:#111;
+    flex-direction:column;
+    width:200px;
+    padding:20px;
+    display:none;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .hero-content h1{
+    font-size:2rem;
+  }
+
+}
