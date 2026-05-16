@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabores de El Salvador</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="header">
+    <nav class="navbar">
+
+      <div class="logo">
+        SaboresSV
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Menú</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Descubre los sabores auténticos de El Salvador</h1>
+
+      <p>
+        Pupusas, yuca frita, tamales y experiencias gastronómicas inolvidables.
+      </p>
+
+      <a href="#reservas" class="btn">
+        Reservar Mesa
+      </a>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="nosotros" id="nosotros">
+
+    <div class="container">
+
+      <h2>Sobre Nosotros</h2>
+
+      <p>
+        Somos un tour gastronómico salvadoreño dedicado a compartir la cultura y tradición culinaria de nuestro país. Nuestro menú está inspirado en recetas tradicionales transmitidas de generación en generación.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="servicios" id="servicios">
+
+    <h2>Platos Típicos</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="img/pupusas.jpg" alt="Pupusas">
+        <h3>Pupusas</h3>
+        <p>
+          Elaboradas artesanalmente con queso, frijoles y chicharrón.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="img/yuca.jpg" alt="Yuca Frita">
+        <h3>Yuca Frita</h3>
+        <p>
+          Crujiente y acompañada de curtido y salsa casera.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="img/tamales.jpg" alt="Tamales">
+        <h3>Tamales</h3>
+        <p>
+          Preparados con ingredientes frescos y recetas tradicionales.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FORMULARIO -->
+  <section class="formulario" id="reservas">
+
+    <h2>Reserva tu mesa</h2>
+
+    <form id="formReserva">
+
+      <div class="form-group">
+        <input type="text" id="nombre" placeholder="Nombre completo">
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Correo electrónico">
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <input type="number" id="personas" placeholder="Cantidad de personas">
+        <small class="error"></small>
+      </div>
+
+      <button type="submit" class="btn">
+        Enviar Reserva
+      </button>
+
+      <p id="mensajeExito"></p>
+
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <p>
+      Síguenos en redes sociales
+    </p>
+
+    <div class="sociales">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+    </div>
+
+    <p>
+      © 2026 Sabores de El Salvador | Diseñado por Grupo Frontend
+    </p>
+
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
